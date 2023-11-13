@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="atv.css" type="text/css" media="screen" />
+
+
+</head>
+
+<body>
+
+    <h1 align="center">QUADRIBOL DA VELHA</h1>
+
+
+    <div id="lado">
+
+        <div>
+            <form width="80" id="form">
+
+
+
+                <tr>
+                    <td><label>
+                            <BR>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <h2>Jogar Contra o Computador:</h2>
+                        </label>
+
+                        <input type="radio" id="cpu" name="cpu" checked />
+                        <label> SIM</label>
+                        <input type="radio" id="cpu" name="cpu" />
+                        <label> NÃO</label>
+                        <button id="reiniciar" name="reiniciar"> Reiniciar o Jogo</button>
+                    </td>
+                </tr>
+
+            </form>
+        </div>
+
+
+
+        <div>
+            <table>
+                <tr>
+                    <td class="primeiro"><img src="img/transp.png" alt="imagem" id="c1"
+                            onclick=" return checkjogo(this.id)"></td>
+                    <td class="primeiro"><img src="img/transp.png" alt="imagem" id="c2"
+                            onclick="return checkjogo(this.id)"></td>
+                    <td class="lado"><img src="img/transp.png" alt="imagem" id="c3" onclick="return checkjogo(this.id)">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="primeiro"><img src="img/transp.png" alt="imagem" id="c4"
+                            onclick="return checkjogo(this.id)"></td>
+                    <td class="primeiro"><img src="img/transp.png" alt="imagem" id="c5"
+                            onclick="return checkjogo(this.id)"></td>
+                    <td class="lado"><img src="img/transp.png" alt="imagem" id="c6" onclick="return checkjogo(this.id)">
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="meio"><img src="img/transp.png" alt="imagem" id="c7" onclick="return checkjogo(this.id)">
+                    </td>
+                    <td class="meio"><img src="img/transp.png" alt="imagem" id="c8" onclick="return checkjogo(this.id)">
+                    </td>
+                    <td class=""><img src="img/transp.png" alt="imagem" id="c9" onclick="return checkjogo(this.id)">
+                    </td>
+
+                </tr>
+
+
+            </table>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
